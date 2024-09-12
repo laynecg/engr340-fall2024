@@ -1,6 +1,8 @@
 # bring in randomness cause we need it in our lives
 import random
 
+from numpy.ma.core import append
+
 
 # copy in Dr. Forsyth's random list function for use
 def generate_random_int_list(max_length, upper_bound):
@@ -30,7 +32,14 @@ odds_list = []
 """
 Step 1: Write a FOR loop to iterate through the list nums
 """
-
+#interating through the list called nums
+#if-else statement separates elements
+#append puts them into lists
+for integer in nums:
+    if integer % 2 == 0:
+        evens_list.append(integer)
+    else:
+        odds_list.append(integer)
 
 """
 Step 2: Inside the FOR loop, examine the contents of nums. If the

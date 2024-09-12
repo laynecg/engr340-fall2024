@@ -28,6 +28,13 @@ Step 2: Iterate through the vector(s) and calculate the dot product
 dot_product = 0
 
 ### Your code here
+# while loop allows the operations to continue until the end condition is met
+i = 0
+while i < fixed_length:
+    partial_sum = vector_a[i]*vector_b[i]
+    dot_product = dot_product + partial_sum
+    i = i + 1
+
 
 """
 Step 3: Calculate the error of your dot_product compared with numpy's solution

@@ -10,6 +10,13 @@ Note: this problem does not require the "compounding interest" formula from the 
 
 ### Your code here ###
 
-in_state_gift = 0
+r = 5
+IS = 30792
+OS = 47882
+Interest = (r/100)
+P1 = IS/(Interest)
+P2 = OS/(Interest)
 
-out_state_gift = 0
+in_state_gift = P1
+
+out_state_gift = P2

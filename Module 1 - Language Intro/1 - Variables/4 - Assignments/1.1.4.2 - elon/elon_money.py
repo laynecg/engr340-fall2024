@@ -12,10 +12,18 @@ the 20-year bonds pay 4.32%, with each compounding annually.
 """
 
 ### all your code below ###
-
+P = 33000000000
+r1 = 3.96
+r2 = 4.32
+t1 = 10
+t2 = 20
+Interest1 = 1+(r1/100)
+Interest2 = 1+(r2/100)
+A1 = P*Interest1**t1
+A2 = P*Interest2**t2
 
 # final answer for 10-year
-ten_year_final = None
+ten_year_final = A1
 
 # final answer for 20-year
-twenty_year_final = None
+twenty_year_final = A2

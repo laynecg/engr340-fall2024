@@ -1,5 +1,5 @@
 # some random variable to compare
-t = 30
+t = 40
 
 print("Using t = "+str(t))
 
