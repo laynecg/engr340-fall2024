@@ -60,9 +60,19 @@ def calculate_stress(force, sample_diameter):
     :return: An array of stresses experienced by the sample in Kilo Pascals (KPa)
     """
 
-    ### YOUR SOLUTION FROM STEP 1 TEMPLATE HERE ###
 
-    return None
+
+    # calculate the cross-section area (mm^2)
+    ### your code here ###
+    CSArea = math.pi * sample_diameter ** 2
+    # calculate stress (MPa) from load (kN) and cross-sectional area
+    ### your code here ###
+    Stress = force / CSArea
+    # delete this line and replace it with your own
+    stress = Stress
+
+    return stress
+
 
 
 def calculate_max_strength_strain(strain, stress):
@@ -76,10 +86,10 @@ def calculate_max_strength_strain(strain, stress):
     """
 
     # calculate the maximum stress experienced
-    ultimate_tensile_stress = -1
+    ultimate_tensile_stress = max(stress)
 
     # calculate the maximum strain experienced
-    fracture_strain = -1
+    fracture_strain = max(strain)
 
     return ultimate_tensile_stress, fracture_strain
 
@@ -89,10 +99,10 @@ if __name__ == "__main__":
     import matplotlib.pyplot as plt
 
     # modify this line to select different materials/folders within tensile/
-    material_folder = "1045CR"
+    material_folder = "2024"
 
     # modify this line to select different samples in the material folder
-    sample_name = "C01A1045CR_1"
+    sample_name = "C01A2024_1"
 
 
     ### Do not modify below this line ###
@@ -133,6 +143,3 @@ if __name__ == "__main__":
 
     print("Ultimate Tensile Stress is ", ultimate_tensile_strength, "MPa")
     print("Fracture Strain is ", 100 * fracture_strain, " percent")
-
-
-

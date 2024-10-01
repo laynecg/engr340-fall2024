@@ -62,12 +62,12 @@ def calculate_stress(force, sample_diameter):
 
     # calculate the cross-section area (mm^2)
     ### your code here ###
-
+    CSArea = math.pi*sample_diameter**2
     # calculate stress (MPa) from load (kN) and cross-sectional area
     ### your code here ###
-
+    Stress = force/CSArea
     # delete this line and replace it with your own
-    stress = None
+    stress = Stress
 
     return stress
 
@@ -77,10 +77,10 @@ if __name__ == "__main__":
     import matplotlib.pyplot as plt
 
     # modify this line to select different materials/folders within tensile/
-    material_folder = "1045CR"
+    material_folder = "2024"
 
     # modify this line to select different samples in the material folder
-    sample_name = "C01A1045CR_1"
+    sample_name = "C01A2024_1"
 
 
     ### Do not modify below this line ###
