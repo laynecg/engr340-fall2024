@@ -34,7 +34,7 @@ def one_sample_tests(_files: list, _mean: float, _alpha: float, _less_than: bool
     # list of files that are out of spec
     reject_null_hypothesis = []
 
-    # YOUR CODE HERE #
+
 
     # return samples that were rejected
     return reject_null_hypothesis
