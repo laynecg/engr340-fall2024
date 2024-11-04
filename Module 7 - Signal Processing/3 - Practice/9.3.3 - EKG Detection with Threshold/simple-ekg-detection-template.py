@@ -10,7 +10,7 @@ Step 1: Load pre-processed data that has already been filtered through the Pan T
 available_datasets = ["mitdb_201", "mitdb213", "mitdb219", "nstdb_118e00", "qtdb_118e06"]
 
 # select a data set from the enumerated list above
-dataset = available_datasets[0]
+dataset = available_datasets["mitdb_201"]
 
 # load saved data from numpy array
 filepath = '../../../data/ekg/processed_'+dataset+'.npy'
@@ -32,10 +32,10 @@ Adjust the values for threshold and timeout to change the detection method/appro
 """
 
 # set a detection threshold (YOUR VALUE BELOW)
-detection_threshold = -1
+detection_threshold = 0.125
 
 # set a heart beat time out (YOUR VALUE BELOW)
-detection_time_out = -1
+detection_time_out = 200
 
 # track the last time we found a beat
 last_detected_index = -1
